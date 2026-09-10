@@ -77,11 +77,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Auditoria de Conta & Plano de Mídia — Boi na Brasa" },
+      {
+        name: "description",
+        content:
+          "Auditoria da conta Meta Ads e plano de mídia do Boi na Brasa, período 10/jun a 09/set/2026.",
+      },
+      { name: "author", content: "Boi na Brasa" },
+      { property: "og:title", content: "Auditoria de Conta & Plano de Mídia — Boi na Brasa" },
+      {
+        property: "og:description",
+        content:
+          "Auditoria da conta Meta Ads e plano de mídia do Boi na Brasa, período 10/jun a 09/set/2026.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
@@ -90,6 +98,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap",
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
